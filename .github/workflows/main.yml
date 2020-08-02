@@ -1,0 +1,23 @@
+name: C/C++ CI 
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+          
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        repository: dalerank/nanogui-sdl
+        path: main   
+
+    - name: generate
+      run: |
+            cd /home/runner/work/nanogui-sdl/nanogui-sdl/main
+            ./build.sh
+            ls -la bin/
