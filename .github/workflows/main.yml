@@ -18,6 +18,5 @@ jobs:
 
     - name: generate
       run: |
-            cd /home/runner/work/nanogui-sdl/nanogui-sdl/main
-            ./build.sh
+            cd /home/runner/work/nanogui-sdl/nanogui-sdl
             ls -la bin/
