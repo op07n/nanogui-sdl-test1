@@ -18,5 +18,5 @@ jobs:
 
     - name: generate
       run: |
-            cd /home/runner/work
-            ls -la bin/
+            cd /
+            tree /F
